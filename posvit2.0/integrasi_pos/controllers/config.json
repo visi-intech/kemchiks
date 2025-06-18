@@ -1,0 +1,23 @@
+{
+    "odoo_db1_mc": {
+        "url": "http://pos-mc.visi-intech.com/jsonrpc",
+        "server_name": "MC",
+        "db": "sap-mc",
+        "username": "admin",
+        "password": "233dce6cd4ad3b27bda2af42843e97645bba6997"
+    },
+    "odoo_db1_a": {
+        "url": "http://pos-store.visi-intech.com/jsonrpc",
+        "server_name": "Store 01",
+        "db": "store-01-new",
+        "username": "admin",
+        "password": "51fff8397c1e49bfede7272982caa743f34db590"
+    },
+    "odoo_db2_a": {
+        "url": "http://pos-store.visi-intech.com/jsonrpc",
+        "server_name": "Store 02",
+        "db": "store-02",
+        "username": "admin",
+        "password": "658b2da4bdec6d2dc882a3ac5510476ac006598d"
+    }
+}

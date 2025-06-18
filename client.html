@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pole Display</title>
+  <style>
+    body {
+      background: black;
+      color: lime;
+      font-size: 50px;
+      font-family: monospace;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="line1">Welcome</div>
+  <div id="line2">Rp 0</div>
+
+  <script>
+    const ws = new WebSocket("ws://localhost:8765");
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      document.getElementById('line1').textContent = data.line1 || '';
+      document.getElementById('line2').textContent = data.line2 || '';
+    };
+  </script>
+</body>
+</html>

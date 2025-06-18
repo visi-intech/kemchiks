@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+
+        <!-- GANTI TEKS "Odoo Point of Sale" DENGAN "PT. KEMANG KARSA LESTARI" -->
+        <xpath expr="//div[@class='pos-receipt-order-data']/p[text()='Odoo Point of Sale']" position="replace">
+            <p>Powered by POSVIT</p>
+        </xpath>
+
+    </t>
+</templates>
