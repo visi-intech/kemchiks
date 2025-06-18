@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="point_of_sale.OrderReceipt" inherit_id="point_of_sale.OrderReceipt">
+        <!-- Override "Powered by Odoo" -->
+        <xpath expr="//div[@class='pos-receipt-order-data']/p[normalize-space(text())='Powered by Odoo']" position="replace">
+            <p>Powered by POSVIT</p>
+        </xpath>
+    </t>
+</templates>
